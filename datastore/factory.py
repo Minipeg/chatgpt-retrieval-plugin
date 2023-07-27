@@ -1,6 +1,6 @@
 from datastore.datastore import DataStore
-from datastore.providers.postgres_datastore import PostgresDataStore
+from datastore.providers.pinecone_datastore import PineconeDataStore
 
 
 async def get_datastore() -> DataStore:
-    return PostgresDataStore()
+    return PineconeDataStore()

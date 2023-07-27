@@ -21,15 +21,12 @@ PyPDF2 = "^3.0.1"
 python-pptx = "^0.6.21"
 python-multipart = "^0.0.6"
 arrow = "^1.2.3"
-psycopg2-binary = "^2.9.5"
+pinecone-client = "^2.1.0"
 loguru = "^0.7.0"
 
 [tool.poetry.scripts]
 start = "server.main:start"
 dev = "local_server.main:start"
-
-[tool.poetry.extras]
-postgresql = ["psycopg2cffi"]
 
 [tool.poetry.group.dev.dependencies]
 httpx = "^0.23.3"
